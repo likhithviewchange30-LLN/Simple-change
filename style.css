@@ -1,0 +1,39 @@
+body{
+    margin: 0px;
+}
+.bgbox{
+    overflow: hidden;
+    height: 100vh;
+
+}
+.bgbox img{
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    scale: 1;
+    animation: zoom 5s infinite;
+
+}
+.box{
+    width: 250px;
+    height: 250px;
+    background-color: aqua;
+    position: fixed;
+    top:32%;
+    left:10px;
+    background-image: url(images/Iron-man.jpg);
+    animation: myanim 3s infinite;
+}
+
+@keyframes myanim{
+   50%{
+        background-image: url(images/Tony_strak.jpg);
+        left: calc(100vw - 250px - 10px);
+        transform: rotate(360deg) scale(0.7);
+   }
+}
+@keyframes zoom{
+    50%{
+        transform: scale(1.1);
+    }
+}
